@@ -1,0 +1,205 @@
+/* Layout designed for iPad in landscape orientation */
+/* Based upon fixed layout 1024*768px and converted into % */
+/* Example 126px wide object on 768px wide screen becomes 16.40625% */
+/* This will be the 'default' landscape layout and used for any undefined device in landscape orientation */
+
+@media all and (orientation:landscape) {
+
+/* Background elements */
+#tablelogo {
+ top: 24.609375%;
+ width: 18.75%;
+ height: 17.70833333333333%;
+}
+
+#cardshoe {
+ width: 19.921875%;
+ height: 23.4375%;
+}
+
+#chiprack {
+ top: -130px;
+ top: -16.927083333333336%;
+ width: 34.5703125%;
+ max-width: 354px;
+ height: 28.2552083333333%;
+}
+
+#betarea2 {
+ bottom: 19.53125%;
+ left: 3.41796875%;
+ right: auto;
+ width: 17.1875%;
+ max-width: 176px;
+ height: 20.0520833333333%;
+ background-position: left center;
+}
+
+#betarea3 {
+    position: absolute;
+ bottom: 18.6197916666667%;
+ width: 53.125%;
+ max-width: 544px;
+ height: 24.0885416666667%;
+ 
+}
+
+.playercards {
+ width: 8.49609375%;
+ max-width: 87px;
+ height: 15.755208333333334%;
+ bottom: 23%;
+}
+
+.dealercards {
+ width: 8.49609375%;
+ max-width: 87px;
+ height: 15.755208333333334%;
+ top: 14.322916666666666%;
+}
+
+.cards {
+ width: 8.49609375%;
+ max-width: 87px;
+ height: 15.755208333333334%;
+ margin-top: 0;
+ top: 35%;
+}
+
+
+.chips {
+ top: 24.609375%;
+}
+#chip1 #item {
+ width: 12.3046875%;
+ max-width: 126px;
+ height: 16.40625%;
+ margin-left: -31.54296875%;
+}
+#chip2 #item {
+ width: 12.3046875%;
+ max-width: 126px;
+ height: 16.40625%;
+ margin-left: -18.84765625%;
+}
+#chip3 #item {
+ width: 12.3046875%;
+ max-width: 126px;
+ height: 16.40625%;
+ margin-left: -6.15234375%;
+}
+#chip4 #item {
+ width: 12.3046875%;
+ max-width: 126px;
+ height: 16.40625%;
+ margin-left: 6.54296875%;
+}
+#chip5 #item {
+ width: 12.3046875%;
+ max-width: 126px;
+ height: 16.40625%;
+ margin-left: 19.23828125%;
+}
+
+.uibutton {
+ width: 5.76171875%;
+ max-width: 59px;
+ height: 7.682291666666667%;
+ top: 14.453125%;
+ top: 20%;
+}
+#uibutton3 {
+ left: 3.125%;
+}
+#uibutton4 {
+ left: 10.15625%;
+}
+
+.buttons {
+ width: 15.33203125%;
+ max-width: 157px;
+ height: 18.098958333333336%;
+ left: 10.15625%;
+ bottom: 48.828125%;
+ margin-top: 0;
+ top: auto;
+ margin: 0;
+}
+
+.gamebutton1 {
+ margin: 0;
+ left: auto;
+ right: 3%;
+ margin-bottom: 0;
+}
+
+.gamebutton2_2 {
+ margin: 0;
+ left: auto;
+ right: 3%;
+ margin-bottom: -17%%;
+}
+
+.gamebutton1_2 {
+  margin: 0;
+  left: auto;
+  right: 3%;
+  margin-bottom: 0;
+}
+
+#txt_cash {
+ width: 25.48828125%;
+ max-width: 261px;
+ height: 10.026041666666668%;
+ top: 2.34375%;
+ left: 3.125%;
+ padding: 1%;
+ padding-bottom: 1.5%;
+}
+#txt_wager {
+ width: 25.48828125%;
+ max-width: 261px;
+ height: 10.026041666666668%;
+ top: 2.34375%;
+ right: 3.125%;
+ padding: 1%;
+ padding-bottom: 1.5%;
+}
+
+.notices {
+ padding-top: 0;
+}
+
+#noticeResult {
+  margin-top: -5%;
+  top: 35%;
+}
+
+#noticeDealer {
+  top: 4%;
+}
+#noticePlayer {
+  margin-top: -2%;
+}
+#noticeBonus {
+  margin-top: -10%;
+}
+#noticePlayerH1 {
+  margin-left: -24%;
+}
+#noticePlayerH2 {
+  margin-left: 5%;
+}
+#noticeResult1 {
+    margin-top: -2.5%;
+  top: 35%;
+  margin-left: -24%;
+}
+#noticeResult2 {
+    margin-top: -2.5%;
+  top: 35%;
+  margin-left: 5%;
+}
+
+
+}

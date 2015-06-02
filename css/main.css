@@ -1,0 +1,1014 @@
+/* Layout designed for iPad in portrait orientation */
+
+/* Fonts */
+@font-face {
+    font-family: 'lets_go_digitalregular';
+    src: url('digital-webfont.woff');
+}
+
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('ufonts.com_futura-bold-bt.woff');
+}
+
+/* Prevent scrollbars, user selection */
+html, body {
+  margin: 0; padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+/* Positioning */
+.posMid {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+}
+
+.posMidLeft {
+ position: absolute;
+ top: 50%;
+ left: 0%;
+}
+
+.posMidRight {
+ position: absolute;
+ top: 50%;
+ right: 0%;
+}
+
+.posMidTop {
+ position: absolute;
+ top: 0%;
+ left: 50%;
+}
+
+.posMidBottom {
+ position: absolute;
+ bottom: 0%;
+ left: 50%;
+}
+
+.posBotLeft {
+ position: absolute;
+ bottom: 0%;
+ left: 0%;
+}
+
+/* UI Elements */
+#holder {
+ position: absolute;
+ width: 768px;
+ height: 964px;
+ margin: 0 auto;
+ overflow: visible;
+}
+
+#background {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ background-image: url("../images/background.png");
+ background-size: 100% 100%;
+}
+
+
+.labels {
+ position: absolute;
+ font-family: "futura_md_btbold";
+ font-size: 16pt;
+ text-align: center;
+ color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.notices {
+position: absolute;
+ bottom: auto;
+ bottom-margin: auto;
+ top: 50%; 
+ left: 50%; 
+ font-size: 14px;
+ color: #ffffff;
+ font-family: 'Open Sans', sans-serif;
+ text-align: center;
+ width: 122px;
+ height: 31px;
+ background: url('../images/box-notice.png');
+ background-repeat: no-repeat;
+ display: none;
+}
+
+.xnotices {
+ position: absolute;
+ bottom: auto;
+ bottom-margin: auto;
+ top: 50%; 
+ left: 50%; 
+ font-family: "futura_md_btbold";
+ font-size: 26pt;
+ text-align: center;
+ width: 500px;
+ color: #ffffff;
+ margin: 0;
+ padding: 6px;
+ background: rgba(0, 0, 0, 0.25);
+ display: none;
+ text-shadow: 1px 1px #000000;
+}
+
+.noticesmall {
+
+}
+
+#noticeDealer {
+ margin-left: -61px;
+ margin-top: -360px;
+}
+
+#noticePlayer {
+ margin-left: -61px;
+ margin-top: 0px;
+}
+
+#noticeBonusSide {
+ top: auto;
+ bottom: 460px;
+ margin-left: -217px;
+ width: 435px;
+ height: 102px;
+ background: url('../images/newjackattacklogo_sm.png');
+ background-repeat: no-repeat;
+}
+
+#forwardButton {
+ position: absolute;
+ bottom: 70px;
+ right: 16px;
+}
+
+#backButton {
+ position: absolute;
+ bottom: 70px;
+ left: 16px;
+}
+ 
+
+#noticeBonus {
+ margin-left: -61px;
+ top: 50%;
+ -webkit-transform: translate(0, -50%);
+ -moz-transform: translate(0, -50%);
+ -ms-transform: translate(0, -50%);
+ -o-transform: translate(0, -50%);
+ transform: translate(0, -50%);
+}
+
+#noticeResult {
+ margin-left: -61px;
+ margin-top: -180px;
+}
+
+#noticeResult1 {
+ margin-left: -217px;
+ margin-top: -180px;
+}
+
+#noticeResult2 {
+ margin-left: 83px;
+ margin-top: -180px;
+}
+
+#noticePlayerH1 {
+ margin-left: -217px;
+ margin-top: 0px;
+}
+
+#noticePlayerH2 {
+ margin-left: 83px;
+ margin-top: 0px;
+}
+
+#noticeH1 {
+ margin-left: -217px;
+ margin-top: 168px;
+}
+
+#noticeH2 {
+ margin-left: 83px;
+ margin-top: 168px;
+}
+
+
+.chips {
+ position: absolute;
+ width: 126px;
+ height: 126px;
+ top: 50%;
+ margin-top: -170px;
+ background-repeat: no-repeat;
+ opacity: 1;
+}
+
+
+
+#chip1 #item {
+ background: url('../images/chip1.png');
+}
+#chip2 #item {
+ background: url('../images/chip2.png');
+ margin-top: -220px;
+}
+#chip3 #item {
+ background: url('../images/chip3.png');
+ margin-top: -245px;
+}
+#chip4 #item {
+ background: url('../images/chip4.png');
+ margin-top: -220px;
+}
+#chip5 #item {
+ background: url('../images/chip5.png');
+}
+
+.chipGlow {
+ position: absolute;
+ width: 140px;
+ height: 140px;
+ top: 50%;
+ margin-top: -170px;
+ background-repeat: no-repeat;
+ background: url('../images/glow_chip.png');
+}  
+
+.buttons_old {
+  position: absolute;
+  width: 157px;
+  height: 139px;
+  top: 50%;
+  left: 50%;
+  margin-top: 20px;  
+  background-repeat: no-repeat;
+}
+
+.buttons {
+ position: absolute;
+ bottom: 100px;
+ left: 50%;
+ width: 157px;
+ height: 139px;
+}
+
+
+.gamebutton1 {
+ margin-left: -78px;
+}
+
+.gamebutton1_2 {
+ margin-left: -256px;
+}
+
+.gamebutton2_2 {
+ margin-left: 100px;
+}
+
+
+
+#IOStoucharea {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 44px;
+  background-repeat: no-repeat;
+  background: rgba(54, 25, 25, .5);
+  display: none;
+}
+
+
+
+
+#button1 {
+ background: url('../images/button1.png');
+}
+#button2 {
+ background: url('../images/button2.png');
+}
+#button3 {
+ background: url('../images/button3.png');
+}
+#button4 {
+ background: url('../images/button4.png');
+}
+#button5 {
+ background: url('../images/button5.png');
+}
+#button6 {
+ background: url('../images/button6.png');
+}
+#button7 {
+ background: url('../images/button7.png');
+}
+
+.uibutton {
+ position: absolute;
+ top: 111px;
+ width: 59px;
+ height: 59px;
+ background-repeat: no-repeat;
+}
+
+#uibutton3 {
+ left: 32px;
+ background-repeat: no-repeat;
+ background-image: url("../images/button-help.png");
+}
+
+#uibutton4 {
+ left: 104px;
+ background-repeat: no-repeat;
+ background-image: url("../images/button-options.png");
+}
+
+.playercards {
+ position: absolute;
+ bottom: 278px;
+ margin-bottom: 30px;
+ left: 50%;
+ width: 87px;
+ height: 121px;
+}
+
+.dealercards {
+ position: absolute;
+ top: 200px;
+ left: 50%;
+ width: 87px;
+ height: 121px;
+}
+
+.cards {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -136px;
+ width: 87px;
+ height: 121px;
+ opacity: 1;
+}
+
+.card {
+ position: absolute;
+ width: 89px;
+ height: 123px;
+ left: 50%;
+ background-repeat: no-repeat;
+}
+
+.cardpos {
+ top: 50%;
+}
+
+/* In-Game elements */
+.cardFront, .cardBack {
+  position:absolute;
+  width: 89px;
+  height: 123px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  background: url('../images/deck2.png') 0 0;
+  background-repeat: no-repeat;
+}  
+
+.cardBack {
+   transform: rotateY(-180deg);
+   background: url('../images/deck2.png') 0 0;
+}
+
+.cardGlow {
+  position:absolute;
+  width: 89px;
+  height: 123px;
+  background: url('../images/glow_card.png');
+  background-repeat: no-repeat;
+}  
+
+
+#shading {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 183px;
+ background-image: url("../images/shading.png");
+ background-size: 100% 100%;
+}
+
+#shading2 {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ background-image: url("../images/shading2.png");
+ background-size: 100% 100%;
+}
+
+#tablebottom {
+ position: absolute;
+ bottom: 0px;
+ left: 50%;
+ margin-left: -50%;
+ width: 100%;
+ height: 213px;
+ background-position: center; 
+ background-image: url("../images/tablebottom.png");
+}
+
+#tablelogo {
+ position: absolute;
+ top: 277px;
+ left: 50%;
+ margin-left: -96px;
+ width: 192px;
+ height: 136px;
+ background-image: url("../images/gamelogo.png");;
+}
+
+#cardshoe {
+ position: absolute;
+ top: 72px;
+ right: 2px;
+ width: 204px;
+ height: 180px;
+ background-image: url("../images/cardshoe.png");
+}
+
+#chiprack {
+ position: absolute;
+ top: -40px;
+ left: 50%;
+ margin-left: -177px;
+ width: 354px;
+ height: 217px;
+ background-image: url("../images/chiptray.png");;
+}
+
+#xplacedChips1 {
+ position: absolute;
+ width: 128px;
+ height: 107px;
+ left: 50%;
+ top: 50%;
+ margin-top: 205px;
+ margin-left: -202px;
+ overflow: visible;
+ pointer-events: none;
+}
+
+#placedChips2 {
+ position: absolute;
+ width: 128px;
+ height: 107px;
+ bottom: 100px;
+ left: 50%;
+ margin-left: -50px;
+ overflow: visible;
+ pointer-events: none;
+}
+
+
+
+#xplacedChips3 {
+ position: absolute;
+ width: 128px;
+ height: 107px;
+ left: 50%;
+ top: 50%;
+ margin-top: 205px;
+ margin-left: 98px;
+ overflow: visible;
+ pointer-events: none;
+ 
+}
+
+#placedChips1 {
+ position: absolute;
+ bottom: 278px;
+ margin-left: -307px;
+ margin-bottom: 154px;
+ left: 50%;
+ width: 60px;
+ height: 60px;
+}
+
+#placedChips3 {
+ position: absolute;
+ bottom: 278px;
+ margin-left: 200px;
+ margin-bottom: 154px;
+ left: 50%;
+ width: 60px;
+ height: 60px;
+}
+
+.chipBet {
+ position: absolute;
+ width: 70px;
+ height: 70px;
+ pointer-events: none;
+}
+
+
+
+
+#betarea2 {
+ position: absolute;
+ bottom: 100px;
+ left: 50%;
+ margin-left: -88px;
+ width: 176px;
+ height: 154px;
+ background-image: url("../images/logo-jackattack.png");
+ background-repeat: no-repeat;
+}
+
+#betarea3 {
+ position: absolute;
+
+bottom: 278px;
+
+ left: 50%;
+ margin-left: -277px;
+ width: 544px;
+ height: 184px;
+ background-image: url("../images/table-ante.png");
+}
+
+#xbetarea1 {
+ position: absolute;
+ width: 145px;
+ height: 130px;
+ bottom: 0%;
+ left: 50%;
+ margin-bottom: 90px;
+ margin-left: -222px;
+ background: url('../images/table_circlebet.png');
+ background-repeat: no-repeat;
+ opacity: 0.5;
+}
+
+
+#xbetarea2 {
+ position: absolute;
+ width: 144px;
+ height: 130px;
+ bottom: 0%;
+ left: 50%;
+ margin-bottom: 90px;
+ margin-left: -72px;
+ background: url('../images/table_circlesidebet.png');
+ background-repeat: no-repeat;
+ opacity: 0.5;
+}
+
+#xbetarea3 {
+ position: absolute;
+ width: 144px;
+ height: 130px;
+ bottom: 0%;
+ left: 50%;
+ margin-bottom: 90px;
+ margin-left: 78px;
+ background: url('../images/table_circleante.png');
+ background-repeat: no-repeat;
+ opacity: 0.5;
+}
+
+#txt_cash {
+ position: absolute;
+ top: 18px;
+ left: 32px;
+ width: 261px;
+ height: 78px;
+ text-align: right;
+ background-image: url("../images/box-balance.png");
+ background-repeat: no-repeat;
+}
+
+#txt_cash span {
+ padding-right:16px;   
+ font-size: 52px;
+ color: #ff0000;
+ font-family: 'Open Sans', sans-serif;
+}
+
+
+#txt_wager {
+ position: absolute;
+ top: 18px;
+ right: 32px;
+ width: 261px;
+ height: 78px;
+ text-align: right;
+ background-image: url("../images/box-total.png");
+ background-repeat: no-repeat;
+}
+
+#txt_wager span {
+ padding-right:16px;   
+ font-size: 52px;
+ color: #ff0000;
+ font-family: 'Open Sans', sans-serif;
+}
+
+#helpText {
+ text-align: left;
+ font-size: 12pt;
+}
+
+#helpText p {
+ margin-top: 0em;
+ margin-bottom: 0.2em;
+}
+
+#helpSection {
+ top: 5%;
+}
+
+#payTable, #helpScreen {
+ position: absolute;
+ top: 0; 
+ left: 0; 
+ font-family: "futura_md_btbold";
+ font-size: 16pt;
+ text-align: center;
+ color: #ffffff;
+ margin: 0;
+ padding: 6px;
+ background: rgba(0, 0, 0, 0.85);
+ width: 100%;
+ height: 100%;
+ z-index: 100;
+ display: none;
+}
+
+
+
+section {
+    position: absolute;
+    width: 90%;
+    height: auto;
+	left: 5%;
+	top: 5%;
+    margin: 0;
+    padding: 10px;
+	border-style: solid;
+   border-color: #ffffff;
+}
+
+div#one {
+    width: 80%;
+	margin: 0;
+    float: left;
+	text-align: left;
+}
+div#two {
+    margin-left: 20%;
+    text-align: right;
+}
+
+#startlogo {
+ position: relative;
+ top: 50%;
+ -webkit-transform: translate(0, -50%);
+ -moz-transform: translate(0, -50%);
+ -ms-transform: translate(0, -50%);
+ -o-transform: translate(0, -50%);
+ transform: translate(0, -50%);
+}
+#start1 {
+ position: absolute;
+ top: 0%;
+ text-align: center;
+ margin-top: 90px;
+ width: 100%;
+}
+
+#startscreen {
+ position: absolute;
+ margin: auto;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ font-family: "futura_md_btbold";
+ font-size: 26pt;
+ text-align: center;
+ color: #ffffff;
+ margin: 0;
+ padding: 6px;
+ background: rgba(0, 0, 0,1);
+ width: 100%;
+ height: calc(100% + 72px);
+ z-index: 200;
+  background-image: url("../images/loader_back.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#tempui1 {
+position: absolute;
+ top: 0%;
+ left: 50%;
+ margin-top: 20px;
+ margin-left: -120px;
+ font-family: "futura_md_btbold";
+ font-size: 20pt;
+ text-align: center;
+ color: #ffffff;
+}
+
+#tempui2 {
+position: absolute;
+ top: 0%;
+ left: 50%;
+ margin-top: 20px;
+ margin-left: 120px;
+ font-family: "futura_md_btbold";
+ font-size: 20pt;
+ text-align: center;
+ color: #ffffff;
+}
+
+#tempui3 {
+position: absolute;
+ top: 0%;
+ left: 50%;
+ margin-top: 60px;
+ margin-left: -120px;
+ font-family: "futura_md_btbold";
+ font-size: 20pt;
+ text-align: center;
+ color: #ffffff;
+}
+
+#tempui4 {
+position: absolute;
+ top: 0%;
+ left: 50%;
+ margin-top: 60px;
+ margin-left: 120px;
+ font-family: "futura_md_btbold";
+ font-size: 20pt;
+ text-align: center;
+ color: #ffffff;
+}
+
+/* Style adjustments for (iPad) landscape mode here */
+@media all and (orientation:landscape) {
+
+.gamebutton1 {
+ margin-left: 300px;
+ margin-bottom: 0px;
+}
+
+.gamebutton2_2 {
+ margin-left: 300px;
+ margin-bottom: -150px;
+}
+
+.gamebutton1_2 {
+  margin-left: 300px;
+  margin-bottom: 0px;
+}
+
+#holder {
+ position: absolute;
+ width: 1024px;
+ height: 708px;
+ left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.playercards {
+ bottom: 143px;
+}
+
+#betarea2 {
+ bottom: 150px;
+ margin-left: 0px;
+ width: 165px;
+ height: 159px;
+ left: 35px;
+ background-image: url("../images/logo-jackattack_l.png");
+}
+
+#betarea3 {
+ bottom: 143px;
+}
+
+#placedChips2 {
+ bottom: 150px;
+ left: 35px;
+ margin-left: 40px;
+}
+
+#placedChips1 {
+ bottom: 143px;
+}
+
+#placedChips3 {
+ bottom: 143px;
+ margin-left: 210px;
+}
+
+#tablelogo {
+ top: 189px;
+}
+
+#chiprack {
+ top: -130px;
+}
+
+.buttons {
+ bottom: 375px;
+}
+
+.dealercards {
+ top: 110px;
+}
+
+.cards {
+ margin-top: -115px;
+}
+
+#noticeDealer {
+ margin-top: -320px;
+}
+
+#noticePlayer {
+ margin-top: 20px;
+}
+
+#noticePlayerH1 {
+ margin-top: 20px;
+}
+
+#noticePlayerH2 {
+ margin-top: 20px;
+}
+
+
+#noticeResult {
+ margin-top: -150px;
+}
+
+#noticeResult1 {
+ margin-top: -150px;
+}
+
+#noticeResult2 {
+ margin-top: -150px;
+}
+#noticeBonusSide {
+  bottom: 320px;
+}
+
+.chips {
+ margin-top: -150px;
+}
+
+#chip2 #item, #chip4 #item {
+ margin-top: -200px;
+}
+#chip3 #item {
+ margin-top: -225px;
+}
+
+#helpText {
+ font-size: 10pt;
+}
+
+#payTable, #helpScreen {
+  font-size: 12pt;
+}
+
+
+}
+
+
+
+
+/* Style changes for iPhone 6 portrait */
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+and (orientation : portrait) {
+
+#holder {
+ position: absolute;
+ width: 750px;
+ height: 1335px;
+ left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.dealercards {
+ top: 294px;
+}
+.playercards {
+ bottom: 505px;
+}
+.cards {
+ margin-top: -196px;
+}
+
+#tablelogo {
+ top: 372px;
+}
+#betarea2, .buttons, #placedChips2 {
+ bottom: 280px;
+}
+
+#betarea3, #placedChips3, #placedChips1 {
+ bottom: 505px;
+}
+
+
+#cardshoe {
+ top: 120px;
+}
+
+.chips {
+ margin-top: -200px;
+}
+
+#chip2 #item, #chip4 #item {
+ margin-top: -250px;
+}
+#chip3 #item {
+ margin-top: -275px;
+}
+
+#noticeDealer {
+  margin-top: -420px;
+}
+#noticeResult, #noticeResult1, #noticeResult2 {
+  margin-top: -236px;
+}
+#noticePlayer, #noticePlayerH1, #noticePlayerH2 {
+  margin-top: -60px;
+}
+#noticeH1, #noticeH2 {
+  margin-top: 108px;
+}
+#noticeBonusSide {
+  bottom: 700px;
+}
+section {
+  width: 70%;
+  left: 15%;
+}
+#payTable, #helpScreen {
+  font-size: 32pt;
+}
+
+
+}
+
+
+/* Style changes for iPhone 6 landscape */
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+and (orientation : landscape) {
+
+#holder {
+ width: 1335px;
+ height: 750px;
+ left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#tablebottom {
+  bottom: -20px;
+}
+
+}

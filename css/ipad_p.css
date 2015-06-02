@@ -1,0 +1,646 @@
+/* Layout designed for iPad in portrait orientation */
+/* Based upon fixed layout 1024*768px and converted into % */
+/* Example 126px wide object on 768px wide screen becomes 16.40625% */
+/* This will be the 'default' portrait layout and used for any undefined device in portrait orientation */
+
+
+/* Fonts */
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('ufonts.com_futura-bold-bt.woff');
+}
+
+/* Prevent scrollbars, user selection */
+html, body {
+  margin: 0; padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+
+  font-size:100%; 
+
+}
+
+/* Game container */
+#holder {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0 auto;
+ overflow: hidden;
+}
+
+/* Helper classes */
+.centerDiv {
+ left: 0;
+ right: 0;
+ margin: auto;
+}
+
+.backImg {
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+
+ 
+/* Background elements */
+#tablelogo {
+  position: absolute;
+  top: 27.05078125%;
+  width: 25%;
+  max-width: 192px;
+  height: 13.28125%;
+  background-image: url("../images/gamelogo.png");
+  background-position: top center;
+}
+
+#cardshoe {
+ position: absolute;
+ top: 7.03125%;
+ right: 0.26041666666667%;
+ width: 26.5625%;
+ max-width: 204px;
+ height: 17.578125%;
+ background-image: url("../images/cardshoe.png");
+ background-position: top right;
+}
+
+#chiprack {
+ position: absolute;
+ top: -40px;
+ width: 46.09375%;
+ max-width: 354px;
+ height: 21.19140625%;
+ background-image: url("../images/chiptray.png");
+ background-position: top center;
+}
+
+#newshade{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ background-image: url("../images/shade60.png");
+ background-size: 100% 100%;
+}
+
+#shading {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 183px;
+ background-image: url("../images/shading.png");
+ background-size: 100% 100%;
+}
+
+#shading2 {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ background-image: url("../images/shading2.png");
+ background-size: 100% 100%;
+}
+
+#betarea2 {
+ position: absolute;
+ bottom: 9.765625%;
+ left: 0;
+ right: 0;
+ margin: auto;
+ width: 22.91666666666667%;
+ max-width: 176px;
+ height: 15.0390625%;
+ background-image: url("../images/logo-jackattack.png");
+ background-position: bottom center;
+}
+
+#betarea3 {
+ position: absolute;
+ bottom: 27.1484375%;
+ left: 0;
+ right: 0;
+ margin: auto;
+ width: 70.83333333333333%;
+ max-width: 544px;
+ height: 17.96875%;
+ background-image: url("../images/table-ante.png");
+ background-position: bottom center;
+}
+
+/* Cards */
+.cardpos {
+ top: 50%;
+}
+
+.cardFront, .cardBack {
+  position:absolute;
+  width: 89px;
+  height: 123px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  background: url('../images/deck2.png') 0 0;
+  background-repeat: no-repeat;
+}  
+
+.cardBack {
+   transform: rotateY(-180deg);
+   background: url('../images/deck2.png') 0 0;
+   background-repeat: no-repeat;
+}
+
+/* Glow not used in the current version, but left here in case we need to add it to other games */
+.cardGlow {
+  position:absolute;
+} 
+
+.playercards {
+ position: absolute;
+ bottom: 30%;
+ left: 50%;
+ margin-top: 11%;
+ width: 11.328125%;
+ max-width: 87px;
+ height: 121px;
+ background-position: bottom center;
+}
+
+.dealercards {
+ position: absolute;
+ top: 19.53125%;
+ left: 50%;
+ width: 11.328125%;
+ max-width: 87px;
+ height: 121px;
+}
+
+.cards {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -17%;
+ width: 11.328125%;
+ max-width: 87px;
+ height: 121px;
+ opacity: 1;
+}
+
+/* Horizontal position of player cards */
+#card1 {
+ margin-left: -26.04166666666667%;
+}
+
+#card2 {
+ margin-left: -13.02083333333333%;
+}
+
+#card3 {
+ margin-left: 0;
+}
+
+#card4 {
+ margin-left: 13.02083333333333%;
+}
+
+/* Horizontal position of dealer cards */
+#card5 {
+ margin-left: -19.53125%;
+}
+#card6 {
+ margin-left: -6.510416666666667%;
+}
+#card7 {
+ margin-left: 6.510416666666667%;
+}
+
+/* Horizontal position of community cards */
+#card8 {
+ margin-left: -32.55208333333333%;
+}
+#card9 {
+ margin-left: -19.53125%;
+}
+#card10 {
+ margin-left: -6.510416666666667%;
+}
+#card11 {
+ margin-left: 6.510416666666667%;
+}
+#card12 {
+ margin-left: 19.53125%;
+}
+
+/* Chips */
+.chips {
+ position: absolute;
+ top: 27.05078125%;
+ left: 50%;
+ margin-top: -2%;
+ opacity: 1;
+}
+ 
+ 
+#chip1 #item {
+ background: url('../images/chip1.png');
+ margin-left: -42.05729166666667%;
+ width: 16.40625%;
+ max-width: 126px;
+ height: 12.3046875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+#chip2 #item {
+ background: url('../images/chip2.png');
+ margin-top: -8%;
+ margin-left: -25.13020833333333%;
+ width: 16.40625%;
+ max-width: 126px;
+ height: 12.3046875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+#chip3 #item {
+ background: url('../images/chip3.png');
+ margin-top: -12%;
+ margin-left: -8.203125%;
+ width: 16.40625%;
+ max-width: 126px;
+ height: 12.3046875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+#chip4 #item {
+ background: url('../images/chip4.png');
+ margin-top: -8%;
+ margin-left: 8.723958333333333%;
+ width: 16.40625%;
+ max-width: 126px;
+ height: 12.3046875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+#chip5 #item {
+ background: url('../images/chip5.png');
+ margin-left: 25.65104166666667%;
+ width: 16.40625%;
+ max-width: 126px;
+ height: 12.3046875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+
+/* Placed chips for when user bets */
+.chipBet {
+ position: absolute;
+ zoom: 1;
+ overflow: visible;
+ pointer-events: none;
+}
+
+#placedChips1 {
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin-left: -10%;
+ margin-top: -5%;
+}
+
+#placedChips4 {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ margin-left: -10%;
+ margin-bottom: -5%;
+}
+
+#placedChips2 {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-left: -10%;
+ overflow: visible;
+ pointer-events: none;
+}
+
+#placedChips3 {
+ position: relative;
+ /* top: 15%; */
+ /* right: 10%; */
+ /* margin-right: 0%; */
+ /* margin-top: -5%; */
+ /* margin-left: -5%; */
+ /* float: right; */
+ /* margin-left: 89%; */
+ /* margin-top: -4%; */
+ float: right;
+ margin-right: 10%;
+}
+
+
+
+/* UI Buttons */
+.uibutton {
+ position: absolute;
+ top: 10.83984375%;
+ width: 7.682291666666667%;
+ max-width: 59px;
+ height: 5.76171875%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+}
+
+#uibutton3 {
+ left: 4.166666666666667%;
+ background-image: url("../images/button-help.png");
+}
+
+#uibutton4 {
+ left: 13.54166666666667%;
+ background-image: url("../images/button-options.png");
+}
+
+/* Game buttons */
+.buttons {
+ position: absolute;
+ bottom: 9.765625%;
+ left: 50%;
+ width: 20.44270833333333%;
+ max-width: 157px;
+ height: 13.57421875%;
+}
+
+
+.gamebutton1 {
+ margin-left: -10.15625%;
+}
+
+.gamebutton1_2 {
+ margin-left: -33.33333333333333%;
+}
+
+.gamebutton2_2 {
+ margin-left: 13.02083333333333%;
+}
+
+#button1 {
+ background: url('../images/button1.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button2 {
+ background: url('../images/button2.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button3 {
+ background: url('../images/button3.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button4 {
+ background: url('../images/button4.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button5 {
+ background: url('../images/button5.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button6 {
+ background: url('../images/button6.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+#button7 {
+ background: url('../images/button7.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: bottom center;
+}
+
+/* UI Display */
+#txt_cash {
+ position: absolute;
+ top: 1.7578125%;
+ left: 4.166666666666667%;
+ width: 33.984375%;
+ max-width: 261px;
+ height: 7.6171875%;
+ text-align: right;
+ background-image: url("../images/box-balance.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top left;
+}
+
+#txt_cash span {
+   position: absolute;
+  top: 0;
+  right: 4%;  
+ font-size: 52px;
+ color: #ff0000;
+ font-family: 'Open Sans', sans-serif;
+}
+
+
+#txt_wager {
+ position: absolute;
+ top: 1.7578125%;
+ right: 4.166666666666667%;
+ width: 33.984375%;
+ max-width: 261px;
+ height: 7.6171875%;
+ text-align: right;
+ background-image: url("../images/box-total.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top right;
+}
+
+#txt_wager span {
+   position: absolute;
+  top: 0;
+  right: 4%;
+ font-size: 52px;
+ color: #ff0000;
+ font-family: 'Open Sans', sans-serif;
+}
+
+/* Notices 10% font size */
+.notices {
+position: absolute;
+ padding-top: 0.5%;
+ top: 50%; 
+ left: 0;
+ right: 0;
+ margin: auto;
+ font-size: 18px;
+ color: #ffffff;
+ font-family: 'Open Sans', sans-serif;
+ text-align: center;
+ width: 47.65625%;
+ max-width: 366px;
+ height: 8.59375%;
+ background: url('../images/box-notice.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top center;
+ display: none;
+}
+
+.noticesmall {
+ font-size: 9px;
+ width: 23.828125%;
+ max-width: 183px;
+ height: 4.296875%;
+ background: url('../images/box-notice-small.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top center;
+ display: none;
+}
+
+#noticeDealer {
+ top: 10%;
+}
+
+#noticePlayer {
+ margin-top: -2.5%;
+}
+
+#noticePlayerH1 {
+ margin-top: 2%;
+ margin-left: -33%;
+ left: 50%;
+}
+
+#noticePlayerH2 {
+ margin-top: 2%;
+ margin-left: 7%;
+ left: 50%;
+}
+ 
+#noticeResult {
+ margin-top: -30%;
+}
+
+#noticeBonus {
+ margin-top: -15%;
+}
+
+#noticeResult1 {
+ margin-top: -24%;
+ margin-left: -33%;
+ left: 50%;
+}
+
+#noticeResult2 {
+ margin-left: 83px;
+ margin-top: -24%;
+ margin-left: 7%;
+ left: 50%;
+}
+
+
+#noticeBonusSide {
+ top: -70%;
+ width: 100%;
+ height: 100%;
+ background: url('../images/side_bonus.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top center;
+}
+
+/* Help screen and paytable */
+#helpText {
+ text-align: left;
+ font-size: 12px;
+}
+
+#helpText p {
+ margin-top: 0em;
+ margin-bottom: 0.2em;
+}
+
+#helpSection {
+ top: 5%;
+}
+
+#payTable, #helpScreen {
+ position: absolute;
+ top: 0; 
+ left: 0; 
+ font-family: "futura_md_btbold";
+ font-size: 12px;
+ text-align: center;
+ color: #ffffff;
+ margin: 0;
+ padding: 6px;
+ background: rgba(0, 0, 0, 0.85);
+ width: 100%;
+ height: 100%;
+ z-index: 100;
+ display: none;
+}
+
+
+
+section {
+    position: absolute;
+    width: 90%;
+    height: 60%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 5%;
+    padding: 10px;
+	border-style: solid;
+   border-color: #ffffff;
+}
+
+div#one {
+    width: 80%;
+	margin: 0;
+    float: left;
+	text-align: left;
+}
+div#two {
+    margin-left: 20%;
+    text-align: right;
+}
+
+#forwardButton {
+ position: absolute;
+ bottom: 6.8359375%;
+ right: 2.083333333333333%;
+}
+
+#backButton {
+ position: absolute;
+ bottom: 6.8359375%;
+ left: 2.083333333333333%;
+}
+ 
